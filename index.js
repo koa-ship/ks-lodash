@@ -8,20 +8,20 @@ const sanitize = require('sanitize-html');
 const common = require('./lib/common');
 const requireAll = require('./lib/require-all');
 
-var utils = require('lodash');
+var lodash = require('lodash');
 
 // custom utils
-utils.mixin(common);
+lodash.mixin(common);
 
 // third parts utils
-utils.safeMixin(utility);
-utils.safeMixin(validator);
+lodash.safeMixin(utility);
+lodash.safeMixin(validator);
 
-utils.safeMixin({
+lodash.safeMixin({
   moment: moment,
   request: request,
   sanitize: sanitize,
   requireAll: requireAll
 });
 
-module.exports = utils;
+module.exports = lodash;
