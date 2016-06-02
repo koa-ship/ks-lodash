@@ -1,7 +1,7 @@
 {
-  "name": "ks-utils",
+  "name": "ks-lodash",
   "version": "0.0.1",
-  "description": "koa-ship utils",
+  "description": "integrate more tools to lodash",
   "main": "index.js",
   "keywords": [
     "utils"
@@ -16,10 +16,10 @@
   },
   "devDependencies": {},
   "scripts": {},
-  "homepage": "https://github.com/koa-ship/ks-utils",
+  "homepage": "https://github.com/koa-ship/ks-lodash",
   "repository": {
     "type": "git",
-    "url": "https://github.com/koa-ship/ks-utils.git"
+    "url": "https://github.com/koa-ship/ks-lodash.git"
   },
   "license": "MIT"
 }
