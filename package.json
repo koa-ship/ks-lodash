@@ -1,6 +1,6 @@
 {
   "name": "ks-lodash",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "integrate more tools to lodash",
   "main": "index.js",
   "keywords": [
