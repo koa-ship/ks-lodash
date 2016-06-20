@@ -1,14 +1,9 @@
 'use strict';
 
+let lodash = require('lodash');
 const utility = require('utility');
 const validator = require('validator');
-const moment = require('moment');
-const request = require('request');
-const sanitize = require('sanitize-html');
 const common = require('./lib/common');
-const requireAll = require('./lib/require-all');
-
-var lodash = require('lodash');
 
 // custom utils
 lodash.mixin(common);
@@ -17,11 +12,12 @@ lodash.mixin(common);
 lodash.safeMixin(utility);
 lodash.safeMixin(validator);
 
-lodash.safeMixin({
-  moment: moment,
-  request: request,
-  sanitize: sanitize,
-  requireAll: requireAll
-});
+// useful tools
+lodash['moment'] = require('moment');
+lodash['request'] = require('request');
+lodash['sanitize'] = require('sanitize-html');
+lodash['requireAll'] = require('./lib/require-all');
+lodash['async'] = require('async');
+lodash['sync'] = require('deasync');
 
 module.exports = lodash;
